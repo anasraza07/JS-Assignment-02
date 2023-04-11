@@ -1,30 +1,36 @@
 // ASSIGNMENT 02
-// Please check assignments one by one by uncommenting it
+// Please check assignments one by one by uncommenting it.
 
-// no. 1
-let userNum = prompt("Enter your number to be added in 5");
-function add(num1) {
-    return function (num2) {
-        alert(num1 + num2);
-    }
-}
-let anonymousFunc = add(5);
-anonymousFunc(userNum);
-
-// no. 2
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150]
-// let length = arr.length;
-// let a = 0;
-// function searchArr(a, length, userNum) {
-//     if (userNum === arr[a]) {
-//         return true;
-//     }
-//     else {
-//         return searchArr(a + 1, length, userNum){
-//             if (userNum === arr[a])
-//     }
+//     no. 1
+// let userNum = +prompt("Enter your number to be added in 5");
+// function add(num1) {
+//     return function (num2) {
+//         alert("5 + " + userNum + " = " + (num1 + num2));
 //     }
 // }
+// let anonymousFunc = add(5);
+// anonymousFunc(userNum);
+
+// no. 2
+// ye nhi ho paaya mujhse yahan issue aaraha hai bht koshish ki lekin nhi horaha
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150]
+// let value = +prompt("Enter your number to check whether it is in an array or not")
+// let a = 0;
+// function searchArray(value) {
+//     // base case
+//     // if (arr.length === 0) {
+//     //     console.log(false);
+//     //     // return false;
+//     // }
+//     // // recursive case
+//     if (arr[a] === value) {
+//         console.log("true");
+//         // return true;
+//     } else {
+//         return searchArray(arr.slice(a += 1), value);
+//     }
+// }
+// searchArray(value);
 
 // no. 3
 // let str = prompt("Enter some text to be written in the para");
@@ -47,8 +53,6 @@ anonymousFunc(userNum);
 // }
 // addListItem(listText);
 
-
-
 // no. 5
 // let elem = prompt("Enter name of the Element: \nType only p for paragraph, \nh1 for big heading,\nbutton to get Button ")
 // let bgColor = prompt("Enter the background color for that element")
@@ -63,27 +67,23 @@ anonymousFunc(userNum);
 // elemBgColor(elem, bgColor, color);
 
 // no. 6
-// let obj = {
+// function saveObj(key, item) {
+//     let stringify = JSON.stringify(item);
+//     localStorage.setItem(key, stringify);
+//     // console.log(item);
+// };
+// saveObj("myObj-01", {
 //     name: "anas",
 //     age: 19,
 //     isCompDeveloper: false
 // }
-// function saveObj(key, item) {
-//     item = JSON.stringify(item);
-//     localStorage.setItem(key, item);
-// };
-// saveObj("myObj-01", {
-//         name: "anas",
-//         age: 19,
-//         isCompDeveloper: false
-//     }
 // );
 
 // no. 7
-// let key = prompt("Enter name of the key");
+// let key = prompt("Enter name of the key", "myObj-01");
 // function retrieveObj(key) {
 //     let getObj = localStorage.getItem(key);
-//     let a =  JSON.parse(getObj);
+//     let a = JSON.parse(getObj);
 //     return a;
 // };
 // console.log(retrieveObj(key));
@@ -100,5 +100,6 @@ anonymousFunc(userNum);
 //     for (i = 0; i < objKeys.length && i < objValues.length; i++) {
 //         localStorage.setItem(objKeys[i], objValues[i]);
 //     }
+//     // console.log(userInfo);
 // }
 // saveEachProperty(userInfo);
