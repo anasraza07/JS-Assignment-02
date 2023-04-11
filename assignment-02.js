@@ -12,25 +12,21 @@
 // anonymousFunc(userNum);
 
 // no. 2
-// ye nhi ho paaya mujhse yahan issue aaraha hai bht koshish ki lekin nhi horaha
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150]
-// let value = +prompt("Enter your number to check whether it is in an array or not")
-// let a = 0;
-// function searchArray(value) {
-//     // base case
-//     // if (arr.length === 0) {
-//     //     console.log(false);
-//     //     // return false;
-//     // }
-//     // // recursive case
-//     if (arr[a] === value) {
-//         console.log("true");
-//         // return true;
-//     } else {
-//         return searchArray(arr.slice(a += 1), value);
-//     }
-// }
-// searchArray(value);
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150];
+let val = +prompt("Enter your number");
+function search(arr, val, a = 0) {
+    if (a < arr.length) {
+        // console.log("HERE")
+        if (arr[a] === val) {
+            console.log("Found " + val + " in an array")
+        }
+        search(arr, val, a += 1)
+    }
+    else {
+        console.log("Not found")
+    }
+}
+search(arr, val)
 
 // no. 3
 // let str = prompt("Enter some text to be written in the para");
