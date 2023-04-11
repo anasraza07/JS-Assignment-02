@@ -12,21 +12,20 @@
 // anonymousFunc(userNum);
 
 // no. 2
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150];
-let val = +prompt("Enter your number");
-function search(arr, val, a = 0) {
-    if (a < arr.length) {
-        // console.log("HERE")
-        if (arr[a] === val) {
-            console.log("Found " + val + " in an array")
-        }
-        search(arr, val, a += 1)
-    }
-    else {
-        console.log("Not found")
-    }
-}
-search(arr, val)
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150];
+// let val = +prompt("Enter your number");
+// function search(arr, val, a = 0) {
+//     if (a < arr.length) {
+//         if (arr[a] === val) {
+//             alert("Found " + val + " in an array")
+//         }
+//         search(arr, val, a += 1)
+//     }
+//     else {
+//         alert("Not found")
+//     }
+// }
+// search(arr, val)
 
 // no. 3
 // let str = prompt("Enter some text to be written in the para");
