@@ -14,18 +14,17 @@
 // no. 2
 // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 150];
 // let val = +prompt("Enter your number");
-// function search(arr, val, a = 0) {
-//     if (a < arr.length) {
-//         if (arr[a] === val) {
-//             alert("Found " + val + " in an array")
-//         }
-//         search(arr, val, a += 1)
+// function searchInArr(arr, val) {
+//     if (arr.length === 0) {
+//         return false;
 //     }
-//     else {
-//         alert("Not found")
+//     if (arr[0] === val) {
+//         return true;
+//     } else {
+//         return searchInArr(arr.slice(1), val)
 //     }
 // }
-// search(arr, val)
+// alert(searchInArr(arr, val));
 
 // no. 3
 // let str = prompt("Enter some text to be written in the para");
